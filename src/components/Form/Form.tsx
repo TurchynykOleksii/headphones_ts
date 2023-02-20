@@ -26,7 +26,6 @@ export const Form: FC = () => {
 
   const onChangeForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(contacts);
     if (
       contacts.some(
         (el: ContactStateObj) => el.name.toLowerCase() === name.toLowerCase()
